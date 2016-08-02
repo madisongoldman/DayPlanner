@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.example.android.newdayplanner.WaterIcon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many glasses of water have you drank today?"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:onClick="decrement"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/total_glasses"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="40dp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:layout_gravity="center"
+            android:onClick="increment"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_margin="15dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="submitOrder"
+        android:layout_marginLeft="129dp"
+        android:text="Done" />
+
+</LinearLayout>
+</ScrollView>

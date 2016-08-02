@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.example.android.newdayplanner.DailyChecklist">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Daily Reminders"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="Feeling anxious?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="Make sure to take care of yourself"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/waterIcon"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/blackflowericon"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:background="#FF4081" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Water Intake"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FF4081"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/showerIcon"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/blackflowericon"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FF4081" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Shower"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FF4081"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/outsideIcon"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/blackflowericon"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FF4081" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Outside"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FF4081"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/goodThingsIcon"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/blackflowericon"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:background="#FF4081" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Good Things"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

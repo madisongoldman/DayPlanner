@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.example.android.newdayplanner.ShowerIcon">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you showered yet today?"
+        android:textSize="30dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="30dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/yesbutton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="No"
+            android:textSize="30dp"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/nobutton" />
+        
+        </RadioGroup>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:id="@+id/messageTextView"/>
+
+</LinearLayout>
