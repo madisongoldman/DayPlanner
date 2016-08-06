@@ -23,6 +23,9 @@
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/radioGroup"
+        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         
@@ -32,7 +35,6 @@
             android:text="Yes"
             android:textSize="30dp"
             android:layout_marginLeft="50dp"
-            android:onClick="onRadioButtonClicked"
             android:id="@+id/yesbutton"/>
 
         <RadioButton
@@ -41,10 +43,18 @@
             android:layout_marginLeft="30dp"
             android:text="No"
             android:textSize="30dp"
-            android:onClick="onRadioButtonClicked"
             android:id="@+id/nobutton" />
         
         </RadioGroup>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submitbutton"
+        android:onClick="onSubmit"
+        android:layout_gravity="center"/>
     
     <TextView
         android:layout_width="wrap_content"
