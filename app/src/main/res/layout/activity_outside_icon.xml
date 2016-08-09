@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="app.com.example.android.newdayplanner.OutsideIcon">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 <LinearLayout
     android:layout_width="wrap_content"
@@ -29,6 +29,7 @@
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
         android:orientation="horizontal">
 
         <RadioButton
@@ -37,7 +38,6 @@
             android:text="Yes"
             android:textSize="30dp"
             android:layout_marginLeft="50dp"
-            android:onClick="onRadioButtonClicked"
             android:id="@+id/yesbutton"/>
 
         <RadioButton
@@ -46,10 +46,18 @@
             android:layout_marginLeft="30dp"
             android:text="No"
             android:textSize="30dp"
-            android:onClick="onRadioButtonClicked"
             android:id="@+id/nobutton" />
 
     </RadioGroup>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submitbutton"
+        android:onClick="onSubmit"
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,4 +68,4 @@
         android:id="@+id/messageTextView"/>
 
 </LinearLayout>
-</ScrollView>
+</LinearLayout>
